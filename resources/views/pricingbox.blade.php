@@ -2,13 +2,6 @@
 
 @section('content')
 
-    @section('breadcrumbs')
-        <ul class="breadcrumb">
-            <li><a href="/"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
-            <li class="active">Pricing box</li>
-        </ul>
-    @stop
-
     <section id="content">
         <div class="container">
             <div class="row">
