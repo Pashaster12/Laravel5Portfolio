@@ -5,7 +5,11 @@ $(function () {
     
     $('#mainmenu li').each(function () {
         var link = $(this).find('a').attr('href');
-        if(cur_url == link) $(this).addClass('active');
+        if(cur_url == link)
+        {
+            $(this).find('a').removeAttr('href');
+            $(this).addClass('active');
+        }
     });
     
 });

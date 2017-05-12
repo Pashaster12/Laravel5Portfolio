@@ -10,34 +10,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4>Get in touch with us by filling <strong>contact form below</strong></h4>
+                    <h4>Свяжитесь с нами</h4>
                     <form id="contactform" action="contact/contact.php" method="post" class="validateform" name="send-contact">
                         <div id="sendmessage">
-                            Your message has been sent. Thank you!
+                            Ваше сообщение отправлено!
                         </div>
                         <div class="row">
                             <div class="col-lg-4 field">
-                                <input type="text" name="name" placeholder="* Enter your full name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+                                <input type="text" name="name" placeholder="* Введите ваше имя" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" required />
                                 <div class="validation">
                                 </div>
                             </div>
                             <div class="col-lg-4 field">
-                                <input type="text" name="email" placeholder="* Enter your email address" data-rule="email" data-msg="Please enter a valid email" />
+                                <input type="email" name="email" placeholder="* Введите ваш email" data-rule="email" data-msg="Please enter a valid email" required />
                                 <div class="validation">
                                 </div>
                             </div>
                             <div class="col-lg-4 field">
-                                <input type="text" name="subject" placeholder="Enter your subject" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+                                <input type="text" name="subject" placeholder="Введите тему сообщения" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" required />
                                 <div class="validation">
                                 </div>
                             </div>
                             <div class="col-lg-12 margintop10 field">
-                                <textarea rows="12" name="message" class="input-block-level" placeholder="* Your message here..." data-rule="required" data-msg="Please write something"></textarea>
+                                <textarea rows="12" name="message" class="input-block-level" placeholder="* Ваше сообщение..." data-rule="required" data-msg="Please write something" required></textarea>
                                 <div class="validation">
                                 </div>
                                 <p>
-                                    <button class="btn btn-theme margintop10 pull-left" type="submit">Submit message</button>
-                                    <span class="pull-right margintop20">* Please fill all required form field, thanks!</span>
+                                    <button class="btn btn-theme margintop10 pull-left" type="submit">Отправить</button>
+                                    <span class="pull-right margintop20">* Заполните, пожалуйста, все обязательные поля!</span>
                                 </p>
                             </div>
                         </div>
