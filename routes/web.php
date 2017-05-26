@@ -11,16 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    $data = array('description' => 'Moderna - Главная страница', 
-                  'title' => 'Moderna - Главная страница');
-    return view('index', $data);
-});
+Route::get('/', 'MainController@index');
 
-Route::get('/{page}', function ($page) {
-    $data = array('description' => 'Moderna - ' . $page, 
-                  'title' => 'Moderna - ' . $page);
-    $data['breadcrumbs'] = Request::Get('breadcrumbs');
-    
-    return view($page, $data);
-})->middleware('breadcrumbs');
+Route::group(['middleware' => 'breadcrumbs'], function(){
+    Route::get('/pricingbox', 'PriceController@index');
+    Route::get('/portfolio', 'PortfolioController@index');
+    Route::get('/blog', 'BlogController@index');
+    Route::get('/contact', 'ContactController@index');
+});
