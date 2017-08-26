@@ -42,7 +42,7 @@ class BreadCrumbs
                     case 'blog' :
                         $crumbs[$key]['text'] = 'Блог';
                         break;
-                    case 'contact' :
+                    case 'contacts' :
                         $crumbs[$key]['text'] = 'Контакты';
                         break;
                     default :

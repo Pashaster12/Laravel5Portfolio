@@ -13,3 +13,18 @@ $(function () {
     });
     
 });
+
+$(document).ready(function(){
+    $('#contactform').on('submit', function(){
+        $.ajax({
+            type: 'POST',
+            url: '/sendmail',
+            data: $('#contactform').serialize(),
+            success: function(result){
+                console.log(result);
+            }
+        });
+        
+        return false;
+    });
+});

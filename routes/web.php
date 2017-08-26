@@ -17,5 +17,8 @@ Route::group(['middleware' => 'breadcrumbs'], function(){
     Route::get('/pricingbox', 'PriceController@index');
     Route::get('/portfolio', 'PortfolioController@index');
     Route::get('/blog', 'BlogController@index');
-    Route::get('/contact', 'ContactController@index');
+    Route::get('/contacts', 'ContactController@index');
 });
+
+//Ajax routes
+Route::post('/sendmail', 'Ajax\ContactController@send');

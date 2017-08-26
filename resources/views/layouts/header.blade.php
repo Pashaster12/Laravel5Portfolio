@@ -11,11 +11,11 @@
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav" id="mainmenu">
-                    <li><a href="/">Главная</a></li>
-                    <li><a href="/pricingbox">Наши цены</a></li>
-                    <li><a href="/portfolio">Портфолио</a></li>
-                    <li><a href="/blog">Блог</a></li>
-                    <li><a href="/contact">Контакты</a></li>
+                    <li><a href="{{ url('/') }}">Главная</a></li>
+                    <li><a href="{{ url('/pricingbox') }}">Наши цены</a></li>
+                    <li><a href="{{ url('/portfolio') }}">Портфолио</a></li>
+                    <li><a href="{{ url('/blog') }}">Блог</a></li>
+                    <li><a href="{{ url('/contacts') }}">Контакты</a></li>
                 </ul>
             </div>
         </div>

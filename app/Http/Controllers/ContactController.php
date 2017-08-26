@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Request;
+use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
@@ -13,8 +13,8 @@ class ContactController extends Controller
             'description' => 'Свяжитесь с нами'
         ];
         
-        $data['breadcrumbs'] = Request::get('breadcrumbs');
+        $data['breadcrumbs'] = \Request::get('breadcrumbs');
         
-        return view('contact', $data);
+        return view('contacts', $data);
     }
 }
