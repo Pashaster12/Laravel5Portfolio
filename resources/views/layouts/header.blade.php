@@ -11,7 +11,6 @@
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav" id="mainmenu">
-                    <li><a href="{{ url('/') }}">Главная</a></li>
                     <li><a href="{{ url('/pricingbox') }}">Наши цены</a></li>
                     <li><a href="{{ url('/portfolio') }}">Портфолио</a></li>
                     <li><a href="{{ url('/blog') }}">Блог</a></li>
