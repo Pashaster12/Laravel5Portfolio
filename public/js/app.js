@@ -1,7 +1,17 @@
-$(function () {
+//Функция, возвращающая абсолютный url
+var getAbsoluteUrl = (function () {
+    var a;
+    return function (url) {
+        if (!a) a = document.createElement('a');
+        a.href = url;
+        return a.href;
+    };
+})();
     
+//Функция для подсветки активного пункта меню
+$(function () {
     var location = window.location.href;
-    var cur_url = '/' + location.split('/').pop();
+    var cur_url = getAbsoluteUrl(location.split('/').pop());
     
     $('#mainmenu li').each(function () {
         var link = $(this).find('a').attr('href');
@@ -14,8 +24,11 @@ $(function () {
     
 });
 
+//AJAX отправка email через форму обратной связи
 $(document).ready(function(){
-    $('#contactform').on('submit', function(){
+    $('#contactform').on('submit', function(e){
+        e.preventDefault();
+        
         $.ajax({
             type: 'POST',
             url: '/sendmail',
@@ -24,7 +37,5 @@ $(document).ready(function(){
                 console.log(result);
             }
         });
-        
-        return false;
     });
 });

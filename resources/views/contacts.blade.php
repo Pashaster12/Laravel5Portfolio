@@ -12,11 +12,13 @@
                 <div class="col-lg-12">
                     <h4>Свяжитесь с нами</h4>
                     <form id="contactform" method="POST" class="validateform">
-                        <!--{{ csrf_field() }}-->
-                        <input type="hidden" name="_token" value="{!! csrf_token() !!}">
+                        {{ csrf_field() }}
                         
                         <div id="sendmessage">
                             Ваше сообщение отправлено!
+                        </div>
+                        <div id="senderror">
+                            При отправке сообщения произошла ошибка. Продублируйте его, пожалуйста, на почту администратора <span>{{ env('MAIL_ADMIN_EMAIL') }}</span>
                         </div>
                         <div class="row">
                             <div class="col-lg-4 field">

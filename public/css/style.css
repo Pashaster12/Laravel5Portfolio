@@ -516,16 +516,23 @@ form#contactform .validation {
 	font-size:11px;
 }
 
-#sendmessage {
-	border:1px solid #e6e6e6;
-	background:#f6f6f6;
-	display:none;
-	text-align:center;
-	padding:15px 12px 15px 65px;
-	margin:10px 0;
-	font-weight:600;
-	margin-bottom:30px;
-
+#sendmessage, #senderror {
+    border:1px solid #e6e6e6;
+    background:#f6f6f6;
+    display:none;
+    text-align:center;
+    padding:15px 12px 15px 65px;
+    margin:10px 0;
+    font-weight:600;
+    margin-bottom:30px;
+}
+ 
+#senderror {
+    color: #f00;
+}
+ 
+#senderror span {
+    font-weight: bold;
 }
 
 #sendmessage.show,.show  {
