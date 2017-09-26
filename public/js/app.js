@@ -33,8 +33,21 @@ $(document).ready(function(){
             type: 'POST',
             url: '/sendmail',
             data: $('#contactform').serialize(),
-            success: function(result){
-                console.log(result);
+            success: function(data){
+                if(data.result)
+                {
+                    $('#senderror').hide();
+                    $('#sendmessage').show();
+                }
+                else
+                {
+                    $('#senderror').show();
+                    $('#sendmessage').hide();
+                }
+            },
+            error: function(){
+                $('#senderror').show();
+                $('#sendmessage').hide();
             }
         });
     });
