@@ -15,6 +15,6 @@ class BlogController extends Controller
         
         $data['breadcrumbs'] = Request::get('breadcrumbs');
         
-        return view('blog', $data);
+        return view('site.blog', $data);
     }
 }

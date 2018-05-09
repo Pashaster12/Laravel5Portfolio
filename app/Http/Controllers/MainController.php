@@ -11,6 +11,6 @@ class MainController extends Controller
             'description' => 'Наша компания - самая лучшая в своём роде'
         ];
         
-        return view('index', $data);
+        return view('site.index', $data);
     }
 }

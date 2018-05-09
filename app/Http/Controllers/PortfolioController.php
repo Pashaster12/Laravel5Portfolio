@@ -15,6 +15,6 @@ class PortfolioController extends Controller
         
         $data['breadcrumbs'] = Request::get('breadcrumbs');
         
-        return view('portfolio', $data);
+        return view('site.portfolio', $data);
     }
 }
