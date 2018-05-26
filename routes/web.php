@@ -11,6 +11,16 @@
 |
 */
 
+//Кастомные правила маршрутизации
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+
+//Роуты админки
+Route::group(['middleware' => 'auth'], function(){
+    Route::get('/admin', 'AdminController@index')->name('admin');
+});
+
 Route::get('/', 'MainController@index');
 
 Route::group(['middleware' => 'breadcrumbs'], function(){
@@ -20,5 +30,5 @@ Route::group(['middleware' => 'breadcrumbs'], function(){
     Route::get('/contacts', 'ContactController@index');
 });
 
-//Ajax routes
+//Ajax маршруты
 Route::post('/sendmail', 'Ajax\ContactController@send');
