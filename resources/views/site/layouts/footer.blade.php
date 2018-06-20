@@ -32,7 +32,7 @@
                 <div class="col-lg-12 text-center">
                     <div class="copyright">
                         <p>
-                            <span>разработка <a href="http://cccp-blog.com">Pashaster</a> на базе &copy; Moderna 2014. </span> <a href="http://bootstraptaste.com/">Bootstrap Themes</a> by BootstrapTaste
+                            <span>Разработка <a href="http://cccp-blog.com">Pashaster</a> на базе &copy; Moderna 2014. </span> <a href="http://bootstraptaste.com/">Bootstrap Themes</a> by BootstrapTaste
                         </p>
                     </div>
                 </div>

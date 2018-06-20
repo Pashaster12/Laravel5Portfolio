@@ -9,7 +9,7 @@
                 <div id="main-slider" class="flexslider">
                     <ul class="slides">
                         <li>
-                            <img src="{{ asset('img/slides/1.jpg') }}" alt="" />
+                            <img src="{{ asset('site/img/slides/1.jpg') }}" alt="" />
                             <div class="flex-caption">
                                 <h3>Modern Design</h3> 
                                 <p>Duis fermentum auctor ligula ac malesuada. Mauris et metus odio, in pulvinar urna</p> 
@@ -17,7 +17,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="{{ asset('img/slides/2.jpg') }}" alt="" />
+                            <img src="{{ asset('site/img/slides/2.jpg') }}" alt="" />
                             <div class="flex-caption">
                                 <h3>Fully Responsive</h3> 
                                 <p>Sodales neque vitae justo sollicitudin aliquet sit amet diam curabitur sed fermentum.</p> 
@@ -25,7 +25,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="{{ asset('img/slides/3.jpg') }}" alt="" />
+                            <img src="{{ asset('site/img/slides/3.jpg') }}" alt="" />
                             <div class="flex-caption">
                                 <h3>Clean & Fast</h3> 
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mer lacinia.</p> 
@@ -153,7 +153,7 @@
                                         <span class="overlay-img-thumb font-icon-plus"></span>
                                     </a>
                                     
-                                    <img src="{{ asset('/img/works/1.jpg') }}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                    <img src="{{ asset('site/img/works/1.jpg') }}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                                 </div>
                             </li>
                             
@@ -163,7 +163,7 @@
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 
-                                <img src="{{ asset('/img/works/2.jpg') }}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="{{ asset('site/img/works/2.jpg') }}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                             
                             <li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
@@ -172,7 +172,7 @@
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 
-                                <img src="{{ asset('/img/works/3.jpg') }}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="{{ asset('site/img/works/3.jpg') }}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                             
                             <li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
@@ -181,7 +181,7 @@
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 
-                                <img src="{{ asset('/img/works/4.jpg') }}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                <img src="{{ asset('site/img/works/4.jpg') }}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
                             </li>
                         </ul>
                     </section>
