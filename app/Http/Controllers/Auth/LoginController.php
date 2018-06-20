@@ -36,4 +36,23 @@ class LoginController extends Controller
     {
         $this->middleware('guest', ['except' => 'logout']);
     }
+    
+    //Делаем авторизацию по полю login вместо стандартного email
+    public function username()
+    {
+        return 'login';
+    }
+    
+    //Перенаправление на страницу логина после выхода пользователя из системы
+    public function logout()
+    {        
+        Auth::logout();
+        
+        return redirect('/admin');
+    }
+    
+    public function showLoginForm()
+    {
+       return view('admin.login');
+    }
 }
