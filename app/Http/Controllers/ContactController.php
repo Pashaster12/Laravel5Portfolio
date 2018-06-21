@@ -15,6 +15,6 @@ class ContactController extends Controller
         
         $data['breadcrumbs'] = \Request::get('breadcrumbs');
         
-        return view('contacts', $data);
+        return view('site.contacts', $data);
     }
 }

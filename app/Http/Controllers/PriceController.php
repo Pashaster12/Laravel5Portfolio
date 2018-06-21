@@ -15,6 +15,6 @@ class PriceController extends Controller
         
         $data['breadcrumbs'] = Request::get('breadcrumbs');
         
-        return view('pricingbox', $data);
+        return view('site.pricingbox', $data);
     }
 }

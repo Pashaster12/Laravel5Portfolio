@@ -51,4 +51,9 @@ class LoginController extends Controller
         
         return redirect('/admin');
     }
+    
+    public function showLoginForm()
+    {
+       return view('admin.login');
+    }
 }
