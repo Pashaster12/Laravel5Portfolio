@@ -1,7 +1,7 @@
 <div class="header">
     <nav class="navbar top-navbar navbar-expand-md navbar-light">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{{ url('admin') }}">
                 <b><img src="{{ asset('/admin/images/demo/logo.png') }}" alt="homepage" class="dark-logo" /></b>
                 <span><img src="{{ asset('/admin/images/demo/logo-text.png') }}" alt="homepage" class="dark-logo" /></span>
             </a>
@@ -10,6 +10,11 @@
             <ul class="navbar-nav mr-auto mt-md-0">
                 <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted  " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
                 <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="{{ url('/') }}"><i class="ti-home"></i>
+                        <span class="hidden-sm-down">Перейти на витрину</span>
+                    </a>
+                </li>
             </ul>
             <ul class="navbar-nav my-lg-0">
                 <li class="nav-item dropdown">
