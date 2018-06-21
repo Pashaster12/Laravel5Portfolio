@@ -11,7 +11,7 @@
                             <div class="post-heading">
                                 <h3><a href="#">This is an example of standard post format</a></h3>
                             </div>
-                            <img src="{{ asset('/img/dummies/blog/img1.jpg') }}" alt="" />
+                            <img src="{{ asset('/site/img/dummies/blog/img1.jpg') }}" alt="" />
                         </div>
                         <p>
                             Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet, ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad qui, est rebum nulla argumentum ei. Fierent adipisci iracundia est ei, usu timeam persius ea. Usu ea justo malis, pri quando everti electram ei, ex homero omittam salutatus sed.

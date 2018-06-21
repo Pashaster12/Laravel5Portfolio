@@ -6,8 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Ela - Bootstrap Admin Dashboard Template</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/admin/images/favicon.png">
+    <title>Laravel Ela Admin</title>
     
     @include('admin.layouts.styles')
 </head>

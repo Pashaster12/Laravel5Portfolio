@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
-    @include('admin.layouts.htmlhead')    
+    
+    @include('admin.layouts.htmlhead')
+    
     <body class="fix-header fix-sidebar">
         <div class="preloader">
             <svg class="circular" viewBox="25 25 50 50">
@@ -14,7 +16,7 @@
                         <div class="col-lg-4">
                             <div class="login-content card">
                                 <div class="login-form">
-                                    <h4>Login</h4>
+                                    <h4>Laravel Ela Admin</h4>
                                     <form method="POST" action="{{ route('login') }}">
                                         @csrf
                                         
@@ -28,8 +30,8 @@
                                             @endif
                                         </div>
                                         <div class="form-group">
-                                            <label>Password</label>
-                                            <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="Password" name="password" required>
+                                            <label>Пароль</label>
+                                            <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="Пароль" name="password" required>
                                             @if ($errors->has('password'))
                                                 <span class="invalid-feedback">
                                                     <strong>{{ $errors->first('password') }}</strong>
@@ -38,7 +40,7 @@
                                         </div>
                                         <div class="checkbox">
                                             <label>
-                                                <input class="custom-control-input" id="remember" type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Запомнить
+                                                <input id="remember" type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Запомнить
                                             </label>
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Войти</button>
@@ -53,5 +55,6 @@
         </div>
         
         @include('admin.layouts.scripts')
+        
     </body>
 </html>

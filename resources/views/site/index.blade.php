@@ -148,7 +148,7 @@
                         <ul id="thumbs" class="portfolio">
                             <li class="col-lg-3 design" data-id="id-0" data-type="web">
                                 <div class="item-thumbs">
-                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 1" href="{{ asset('/img/works/1.jpg') }}">
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 1" href="{{ asset('/site/img/works/1.jpg') }}">
                                         <span class="overlay-img"></span>
                                         <span class="overlay-img-thumb font-icon-plus"></span>
                                     </a>
@@ -158,7 +158,7 @@
                             </li>
                             
                             <li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 2" href="{{ asset('/img/works/2.jpg') }}">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 2" href="{{ asset('/site/img/works/2.jpg') }}">
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -167,7 +167,7 @@
                             </li>
                             
                             <li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 3" href="{{ asset('/img/works/3.jpg') }}">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 3" href="{{ asset('/site/img/works/3.jpg') }}">
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -176,7 +176,7 @@
                             </li>
                             
                             <li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 4" href="{{ asset('/img/works/4.jpg') }}">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 4" href="{{ asset('/site/img/works/4.jpg') }}">
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>

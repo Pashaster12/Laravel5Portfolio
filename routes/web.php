@@ -17,18 +17,21 @@ Route::post('login', 'Auth\LoginController@login');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 //Роуты админки
-Route::group(['middleware' => 'auth'], function(){
-    Route::get('/admin', 'AdminController@index')->name('admin');
+Route::middleware('auth')->namespace('Admin')->prefix('admin')->group(function(){
+    Route::get('/', 'BlogController@all');
+    Route::get('/articles/create', 'BlogController@create');
 });
 
-Route::get('/', 'MainController@index');
-
-Route::group(['middleware' => 'breadcrumbs'], function(){
-    Route::get('/pricingbox', 'PriceController@index');
-    Route::get('/portfolio', 'PortfolioController@index');
-    Route::get('/blog', 'BlogController@index');
-    Route::get('/contacts', 'ContactController@index');
+//Роуты витрины сайта
+Route::namespace('Site')->group(function(){
+    Route::get('/', 'MainController@index');
+    Route::middleware('breadcrumbs')->group(function(){
+        Route::get('/pricingbox', 'PriceController@index');
+        Route::get('/portfolio', 'PortfolioController@index');
+        Route::get('/blog', 'BlogController@index');
+        Route::get('/contacts', 'ContactController@index');
+    });  
+    
+    //Ajax маршруты
+    Route::post('/sendmail', 'Ajax\ContactController@send');
 });
-
-//Ajax маршруты
-Route::post('/sendmail', 'Ajax\ContactController@send');
