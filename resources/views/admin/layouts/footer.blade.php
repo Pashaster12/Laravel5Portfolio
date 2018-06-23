@@ -1,1 +1,1 @@
-<footer class="footer"> Ela Admin © 2018 All rights reserved. Template designed by <a href="https://colorlib.com">Colorlib</a></footer>
+<footer class="footer"><a href="https://github.com/puikinsh/ElaAdmin">Ela Admin</a> © 2018 All rights reserved.</footer>

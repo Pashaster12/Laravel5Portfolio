@@ -1,12 +1,30 @@
 @extends('admin.layouts._layout')
 
+@push('custom_styles')
+    <link rel="stylesheet" href="/admin/css/lib/summernote/summernote-bs4.css" />
+@endpush
+
+@push('custom_scripts')
+    <script src="/admin/js/lib/summernote/summernote-bs4.js"></script>
+    <script src="/admin/js/lib/summernote/lang/summernote-ru-RU.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.summernote').summernote({
+                height: 300,
+                lang: 'ru-RU'
+            });
+        });
+    </script>
+@endpush
+
 @section('breadcrumbs')
 <div class="row page-titles">
     <div class="col-md-5 align-self-center">
         <h3 class="text-primary">Создание статьи</h3> </div>
     <div class="col-md-7 align-self-center">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="javascript:void(0)">Админка</a></li>
+            <li class="breadcrumb-item"><a href="{{ url('/admin') }}">Админка</a></li>
             <li class="breadcrumb-item active">Создание статьи</li>
         </ol>
     </div>
@@ -17,50 +35,35 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">
-            <div class="card">
-                <div class="card-title">
-                    <h4>Table Basic </h4>
-                </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Name</th>
-                                    <th>Status</th>
-                                    <th>Date</th>
-                                    <th>Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Kolor Tea Shirt For Man</td>
-                                    <td><span class="badge badge-primary">Sale</span></td>
-                                    <td>January 22</td>
-                                    <td class="color-primary">$21.56</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Kolor Tea Shirt For Women</td>
-                                    <td><span class="badge badge-success">Tax</span></td>
-                                    <td>January 30</td>
-                                    <td class="color-success">$55.32</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Blue Backpack For Baby</td>
-                                    <td><span class="badge badge-danger">Extended</span></td>
-                                    <td>January 25</td>
-                                    <td class="color-danger">$14.85</td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <div class="basic-form">
+                <form method="POST" action="{{ url('articles/save') }}">
+                    <div class="form-group">
+                        <label for="slug" class="control-label">URL новости</label>
+                        <input type="text" class="form-control input-default" id="slug" name="slug" placeholder="Введите url новости">
                     </div>
-                </div>
+                    
+                    <div class="form-group">
+                        <label for="title" class="control-label">Заголовок новости</label>
+                        <input type="text" class="form-control input-default" id="title" name="title" placeholder="Введите заголовок новости">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description" class="control-label">Текст новости</label>
+                        <textarea class="summernote form-control" id="description" name="description" rows="15" placeholder="Введите текст статьи"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preview" class="control-label">Превью новости</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="preview">
+                            <label class="custom-file-label" for="preview">Выбрать</label>
+                        </div>
+                    </div>
+                    
+                    <input type="submit" class="btn btn-info float-lg-right" value="Сохранить">
+                </form>
             </div>
         </div>
     </div>
 </div>
-@stop
+@endsection

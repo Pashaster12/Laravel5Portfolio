@@ -2,8 +2,8 @@
     <nav class="navbar top-navbar navbar-expand-md navbar-light">
         <div class="navbar-header">
             <a class="navbar-brand" href="{{ url('admin') }}">
-                <b><img src="{{ asset('/admin/images/demo/logo.png') }}" alt="homepage" class="dark-logo" /></b>
-                <span><img src="{{ asset('/admin/images/demo/logo-text.png') }}" alt="homepage" class="dark-logo" /></span>
+                <b><img src="{{ asset('/admin/images/logo.png') }}" alt="homepage" class="dark-logo" /></b>
+                <span><img src="{{ asset('/admin/images/logo-text.png') }}" alt="homepage" class="dark-logo" /></span>
             </a>
         </div>
         <div class="navbar-collapse">
@@ -18,7 +18,7 @@
             </ul>
             <ul class="navbar-nav my-lg-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ asset('/admin/images/demo/3.jpg') }}" alt="user" class="profile-pic" /></a>
+                    <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ asset('/admin/images/user.jpg') }}" alt="user" class="profile-pic" /></a>
                     <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                         <ul class="dropdown-user">
                             <li>
