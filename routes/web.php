@@ -17,9 +17,13 @@ Route::post('login', 'Auth\LoginController@login');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 //Роуты админки
-Route::middleware('auth')->namespace('Admin')->prefix('admin')->group(function(){
+Route::middleware('auth')->namespace('Admin')->prefix('/admin')->group(function(){
     Route::get('/', 'BlogController@all');
-    Route::get('/articles/create', 'BlogController@create');
+
+    Route::prefix('/articles')->group(function(){
+        Route::get('/', 'BlogController@all');
+        Route::get('/create', 'BlogController@create');
+    });
 });
 
 //Роуты витрины сайта

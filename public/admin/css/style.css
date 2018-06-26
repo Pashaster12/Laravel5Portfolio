@@ -5392,6 +5392,7 @@ label {
 thead tr th {
   color: #455a64;
   font-weight: 500;
+  border-top: none !important;
 }
 thead tr th:last-child {
   text-align: right;
