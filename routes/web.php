@@ -28,7 +28,7 @@ Route::middleware('auth')->namespace('Admin')->prefix('/admin')->group(function(
 
 //Роуты витрины сайта
 Route::namespace('Site')->group(function(){
-    Route::get('/', 'MainController@index');
+    Route::get('/', 'IndexController@index');
     Route::middleware('breadcrumbs')->group(function(){
         Route::get('/pricingbox', 'PriceController@index');
         Route::get('/portfolio', 'PortfolioController@index');
