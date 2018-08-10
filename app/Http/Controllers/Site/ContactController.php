@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Request as RequestFacade;
 use Mail;
 
 class ContactController extends Controller
@@ -15,8 +16,7 @@ class ContactController extends Controller
             'description' => 'Свяжитесь с нами'
         ];
         
-        $data['breadcrumbs'] = \Request::get('breadcrumbs');
-        
+        $data['breadcrumbs'] = RequestFacade::get('breadcrumbs');
         return view('site.contacts', $data);
     }
 
